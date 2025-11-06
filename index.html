@@ -41,10 +41,10 @@
             const hourElement = document.getElementById('hours');
             const minuteElement = document.getElementById('minutes');       
             const secondElement = document.getElementById('seconds');
-        }
+       
         const date =  new Date();
         let hours = date.getHours();
-           hours = hours > 12 ? hours - 12 : hours;
+        hours = hours > 12 ? hours - 12 : hours;
         hours = hours < 10 ? '0' + hours : hours;
         let minutes = date.getMinutes();
         minutes = minutes < 10 ? '0' + minutes : minutes;
@@ -59,6 +59,8 @@
         
 
          setInterval(loadClock, 1000);
+
+          }
 
     </script>
 </body>
